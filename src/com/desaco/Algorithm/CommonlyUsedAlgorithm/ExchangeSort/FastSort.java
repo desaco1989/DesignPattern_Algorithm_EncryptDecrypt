@@ -3,6 +3,7 @@ package com.desaco.Algorithm.CommonlyUsedAlgorithm.ExchangeSort;
 /**
  * 快速排序
  * 
+ 
  * @author desaco
  *         对于基准位置的选取一般有三种方法：固定切分，随机切分和三取样切分。固定切分的效率并不是太好，随机切分是常用的一种切分，效率比较高，
  *         最坏情况下时间复杂度有可能为O(N2).对于三数取中选择基准点是最理想的一种。 基于分治的思想，是冒泡排序的改进型。
@@ -83,5 +84,5 @@ public class FastSort {
 		sort2(array, lo, index - 1);
 		sort2(array, index + 1, hi);
 	}
-	
+
 }
