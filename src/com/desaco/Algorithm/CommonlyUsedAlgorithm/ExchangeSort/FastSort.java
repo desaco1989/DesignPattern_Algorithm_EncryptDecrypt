@@ -1,14 +1,19 @@
 package com.desaco.Algorithm.CommonlyUsedAlgorithm.ExchangeSort;
 
 /**
+ * 
+ * 交换排序：交换数据元素的位置
+ * 
  * 快速排序
  * 
- 
  * @author desaco
  *         对于基准位置的选取一般有三种方法：固定切分，随机切分和三取样切分。固定切分的效率并不是太好，随机切分是常用的一种切分，效率比较高，
  *         最坏情况下时间复杂度有可能为O(N2).对于三数取中选择基准点是最理想的一种。 基于分治的思想，是冒泡排序的改进型。
  * 
  *         https://www.cnblogs.com/hjy9420/p/5032309.html
+ *         
+ * 快速排序：是先把数组粗略的排序成两个子数组，然后递归再粗略分两个子数组，直到子数组里面只有一个元素，
+ * 那么就自然排好序了，可以总结为先排序再递归；
  *
  */
 public class FastSort {
@@ -24,6 +29,7 @@ public class FastSort {
 
 	}
 
+	//快速排序
 	public static void sort(int[] a, int low, int high) {
 		int start = low;
 		int end = high;
